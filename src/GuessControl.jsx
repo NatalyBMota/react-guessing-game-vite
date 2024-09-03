@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import Button from "./Button";
 
 const GuessControl = ({onGuess}) => {
@@ -23,6 +24,10 @@ const GuessControl = ({onGuess}) => {
             <Button onClick={onSubmitGuess}>Submit Guess</Button>
         </div>
     );
+};
+
+GuessControl.propTypes = {
+	onGuess: PropTypes.func.isRequired,
 };
 
 export default GuessControl;

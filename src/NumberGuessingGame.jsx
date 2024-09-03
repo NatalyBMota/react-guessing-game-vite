@@ -31,7 +31,7 @@ const NumberGuessingGame = () => {
     let newNumberOfGuesses = numberOfGuesses + 1;
     setNumberOfGuesses(newNumberOfGuesses);
   };
-
+  
   const handleReset = () => {
     setNumberToGuess(getRandomNumber);
     setNumberOfGuesses(0);
