@@ -7,8 +7,11 @@ import GameOver from "./GameOver";
  *
  * Returns a random integer number from 1-100 inclusive
  */
+const MAX_NUMBER = 100;
+const MIN_NUMBER = 0;
+
 const getRandomNumber = () => {
-  return Math.floor(Math.random() * 100) + 1;
+  return Math.floor(Math.random() * MAX_NUMBER) + MIN_NUMBER;
 };
 
 const MAX_ATTEMPTS = 5;
